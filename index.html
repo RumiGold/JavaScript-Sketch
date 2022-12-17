@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>sketch</title>
+  </head>
+  <body>
+    <nav>
+      <h1>sketch</h1>
+    </nav>
+
+    <div class="Content">
+      <div class="tools">
+        <div class="colorBox">
+          <label for="">Select Your Color </label>
+          <input type="color" id="colorInput" />
+        </div>
+        <div class="clearBox">
+          <button id="clearBtn">Clear Everything</button>
+        </div>
+        <div class="gridSizeBox">
+          <label for="">Choose Grid Size</label>
+          <input type="range" min="16" max="64" value="16" id="range" />
+          <p>Current <span id="gridSpan">16 x 16</span></p>
+        </div>
+      </div>
+
+      <div class="game" id="gameGrid"></div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
